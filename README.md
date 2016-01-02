@@ -33,5 +33,6 @@ Let's start : <br>
 	$git remote -v <br>
 8)	How to revert back to particular commit 
 	$git revert --hard commitId
+9) Now thinking about new command 
 	</body> 
 </html>
