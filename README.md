@@ -31,7 +31,5 @@ Let's start : <br>
 	$git commit -m "Git Message " // -m here is to give proper name to commit<br>
 7) How many remote repositories we are connected to <br>
 	$git remote -v <br>
-8)	How to revert back to particular commit 
-	$git revert --hard commitId
 	</body> 
 </html>
