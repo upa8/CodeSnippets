@@ -14,9 +14,11 @@
 
 Here we go then . <br>
 Let's start : <br>
-1) Setting up name and username<br> 
-	$git config --global user.name "username" <br>
-	$git config --global user.email "myemail@xyz.com" <br>
+1) Setting up name and username<br>
+	<pre><code> 
+		$git config --global user.name "username" <br>
+		$git config --global user.email "myemail@xyz.com" <br>
+	</code></pre> 
 2) Create a git repository <br>
 	$git init projectName<br>
 3) Create a file <br>
