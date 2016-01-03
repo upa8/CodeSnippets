@@ -20,21 +20,37 @@ Let's start : <br>
 		$git config --global user.email "myemail@xyz.com" <br>
 	</code></pre> 
 2) Create a git repository <br>
-	$git init projectName<br>
+	<pre><code> 
+		$git init projectName<br>
+	</code></pre>
 3) Create a file <br>
-	$touch filename.extension<br> 
+	<pre><code>
+		$touch filename.extension<br>
+	</code></pre> 
 4) Check status of file <br>
-	$git add filename.extension<br>
-	OR <br>
-	$git add .  // This will add all the files which are untracked<br> 
+	<pre><code>
+		$git add filename.extension<br>
+		OR <br>
+		$git add .  // This will add all the files which are untracked<br> 
+	</code></pre>
 5) Check status of the project <br>
-	$git status  <br>
+	<pre><code>
+		$git status  <br>
+	</code></pre>
+	
 6) Commit the changes<br> 
-	$git commit -m "Git Message " // -m here is to give proper name to commit<br>
+	<pre><code>
+		$git commit -m "Git Message " // -m here is to give proper name to commit<br>
+	</code></pre>
+	
 7) How many remote repositories we are connected to <br>
-	$git remote -v <br>
+	<pre><code>
+		$git remote -v <br>
+	</code></pre>
+	
 8)	How to revert back to particular commit 
-	$git revert --hard commitId
-9) Now thinking about new command 
+	<pre><code>
+		$git revert --hard commitId
+	</code></pre>
 	</body> 
 </html>
