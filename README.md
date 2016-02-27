@@ -52,9 +52,5 @@ Let's start : <br>
 	<pre><code>
 		$git revert --hard commitId
 	</code></pre>
-9)  Open file in terminal 
-	<pre><code>
-		$nano fileName.extension
-	</code></pre>
 	</body> 
 </html>
