@@ -1,0 +1,42 @@
+first open node.js command line interface 
+
+then go to directory where you have installed your phonegap application .
+Now to create any new project 
+/
+cordova create pushnotification com.pushnotification pushnotication 
+/
+now to add platforms 
+/
+cordova platform add android 
+/
+
+now to build that porject 
+/
+cordova build android 
+/
+
+
+
+
+
+
+to create new project 
+cordova create pushnotification com.pushnotification pushnotification
+
+ADD PLATFORM 
+cordova platform add android 
+
+
+
+tO BUILD 
+cordova build android 
+
+
+run 
+cordova emulate android 
+cordova run android 
+
+run javascript notify 
+node notify.js
+
+
