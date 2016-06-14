@@ -1,0 +1,19 @@
+1) To copy the content of a file 
+
+cat filename.extension 
+
+2) To update Ubuntu 
+
+sudo apt-get update
+
+3) pwd 
+Shows current directory structure 
+
+4) kill process
+kill pid
+
+5) Find all running process 
+
+ps -ef
+
+6) 

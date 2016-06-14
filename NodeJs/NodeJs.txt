@@ -1,0 +1,31 @@
+1) Requirements for nodeJs compilation 
+
+sudo apt-get install libssl-dev g++ make 
+
+2) Download nodeJs source code 
+
+wget https://nodejs.org/dist/v4.4.5/node-v4.4.5.tar.gz
+
+3) Extract Zip 
+
+tar -xvf node-v4.4.5.tar.gz
+
+cd node-v0.10.32
+
+4) ./configure && make && sudo make install 
+
+5) Run nodeJs app 
+
+node test1.js
+
+6) For continious running 
+
+nohup node test1.js & 
+
+7) To check background process 
+ps -ef 
+
+8) kill process 
+kill pid 
+
+9) 
