@@ -29,3 +29,5 @@ SELECT table_name
 To select schema of a table
 
 \d "tableName" describe table;
+
+9)pg_dump --inserts -f filename.dump your_database
