@@ -145,15 +145,18 @@ Git helpful commands
 
 
 
+
 ****************Github workflow***********************
 ------------------------------------------------------
 
 How to Use Git with Github . 
 
 1) Create any repository 
-	git init repositoryName 
+	-- git init repositoryName 
+
 	otherwise 
-	git init 
+
+	-- git init 
 2) now check the remote repositories 
 	git remote -v 
 
