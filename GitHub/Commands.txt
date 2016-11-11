@@ -134,9 +134,14 @@ Git helpful commands
 	To merge a slave branch into master branch 
 	-- git merge Slave
 *)	To delete branch 
-	-- git branch -D branchName 
+	-- git branch -d branchName 
 
 
+*) 	To find all branches 
+	-- git branch 
+
+*) 	To find all config details 
+	-- git config -l
 
 
 
