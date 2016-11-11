@@ -118,43 +118,30 @@ Git helpful commands
 	To push all the tags 
 	-- git push github --tag
 
-----------------------
-Reverting & Reset 
+*)
+	To go to particular commit 
+	--git checkout commid_id
 
-To go to particular commit 
---git checkout commid_id
+*)
+	To go back to current state 
+	-- git checkout master
 
-To go back to current state 
--- git checkout master
+*)
+	similar for tag 
+	-- tag checkout tag_name
 
-
-similar for tag 
--- tag checkout tag_name
-
-
-Discard The Changes in file : 
-
-git checkout filename
--------------------------------------------
-
-
---------------------------
-
-
-Merge Command 
-
-1) If have two branches 1 . Master and 2. Slave . 
-	Now , we want to merger this two files into master branch 
-	then 
-	1) get into master branch first
-	and then make this command 
-	git merger Slave
-2) How to delete a branch 
-	git branch -D branchName 
-3) 
+*) 
+	To merge a slave branch into master branch 
+	-- git merge Slave
+*)	To delete branch 
+	-- git branch -D branchName 
 
 
 
+
+
+****************Github workflow***********************
+------------------------------------------------------
 
 How to Use Git with Github . 
 
