@@ -151,7 +151,16 @@ Git helpful commands
 	-- git diff 
 *) 	To check Index and Repository aread difference 
 	-- git --cached
+*)	To check difference between two branches
+	-- git diff branch1 branch2
+
+*) 	To remove file completely 
+	-- git rm -f filename
+*)	To move file into staging area 
+	-- git rm --cached filename
+
 *)
+
 
 Explore this commands 
 
