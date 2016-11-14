@@ -149,17 +149,78 @@ Git helpful commands
 
 *) 	To check working and Index area difference 
 	-- git diff 
+
 *) 	To check Index and Repository aread difference 
 	-- git --cached
+
 *)	To check difference between two branches
 	-- git diff branch1 branch2
 
 *) 	To remove file completely 
 	-- git rm -f filename
+
 *)	To move file into staging area 
 	-- git rm --cached filename
 
-*)
+*)	To add files into stash 
+	-- git stash --include-untracked
+
+*) 	To read content of stash 
+	-- git stash list
+
+*)	To get back stash 
+	-- git stash apply 
+
+*) 	To clear the stash 
+	-- git stash clear
+
+*) 	To get advanced git log 
+	-- git log --graph --decorate --oneline
+
+*)	To get detail information about commit 
+	-- git show commitId
+
+*)	To get details 
+	-- git show HEAD~4
+
+*)	To get one month ago
+	-- git show HEAD@{"1 month ago"}
+
+*)	TO find who changed the file
+	-- git blame filename 
+
+*)	To find difference between two commits 
+	-- git diff HEAD HEAD~2
+
+*)	To get help related to particular command 
+	-- git help log 
+
+*) 	To get more about git log (what changed in commit" 
+	-- git log --patch
+
+*)	To get commit with word apples 
+	-- git log --grep apples --oneline
+
+*) 	To get commites which changed or delete the word 
+	apples
+	-- git log -Gapples --patch 
+
+*)	To get limited logs 
+	-- git log -3 --oneline 
+	-- git log HEAD~5..HEAD^ --oneline 
+
+*)	To compare histroy of two branch
+	-- git log branch1..branch2 --oneline
+
+*)      To change latest commit 
+	-- git commit --amend -m "New message"
+
+*) 	To find histroy of all commits 
+	-- git reflog --oneline
+
+*)	
+
+
 
 
 Explore this commands 
