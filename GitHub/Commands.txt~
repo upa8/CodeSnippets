@@ -147,6 +147,40 @@ Git helpful commands
 	-- git rebase -i
 
 
+*) 	To check working and Index area difference 
+	-- git diff 
+*) 	To check Index and Repository aread difference 
+	-- git --cached
+*)
+
+Explore this commands 
+
+*) 	-- git bisect 
+	-- git rerere
+	-- git help
+	-- git filter-branch
+	-- git fetch
+	-- git clean
+	-- git reflog
+	-- git cherry-pick
+	-- git brame
+	-- git grep
+	-- git diff
+
+
+
+Points to create article on git
+
+Importance of git 
+* Can explore past 
+* Fix mistakes in past 
+* Git workflows 
+* Command line is friend 
+* GUI is also there 
+* Four working areas : Stash , Working area , Index , Repository
+* Git is the only version control system which allows us to modify index directly 
+
+
 
 
 
