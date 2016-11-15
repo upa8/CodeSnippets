@@ -28,4 +28,6 @@ ps -ef
 8) kill process 
 kill pid 
 
-9) 
+9) To Run mocha 
+	mocha 
+10)
