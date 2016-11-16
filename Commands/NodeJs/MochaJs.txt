@@ -1,0 +1,10 @@
+*) To run mocha 
+	mocha 
+
+*) To get report in doc 
+	mocha --reporter doc
+
+*) To get report in html 
+	mocha -reporter doc > report.html
+
+*) 
