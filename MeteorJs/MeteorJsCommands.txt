@@ -1,9 +1,0 @@
-1) Create Meteor Application 
-
-meteor create applicationName
-
-2) Run meteor Application 
-
-meteor
-
-3) 
