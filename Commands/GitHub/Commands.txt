@@ -218,8 +218,13 @@ Git helpful commands
 *) 	To find histroy of all commits 
 	-- git reflog --oneline
 
-*)	  
+*)	To do interactive stagging 
+	-- git add -p
 
+*)	To create a branch with checkout and switch into that branch 
+	-- git checkout -b branchName 
+
+*)
 
 
 
