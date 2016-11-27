@@ -3,4 +3,13 @@ Learning Docker
 
 Commands :
 
-*)
+*) 	Get list of all commands 
+	-- docker-machine 
+*) 	Get ip of docker machine
+	-- docker-machine ip
+
+*)	Get list of all docker machines 
+	-- docker-machine ls
+
+*)	
+
