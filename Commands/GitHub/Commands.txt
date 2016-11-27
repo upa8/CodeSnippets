@@ -235,8 +235,6 @@ Git helpful commands
 
 *) 	
 
-
-
 Explore this commands 
 
 *) 	-- git bisect 
