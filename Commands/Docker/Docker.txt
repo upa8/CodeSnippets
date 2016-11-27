@@ -11,5 +11,21 @@ Commands :
 *)	Get list of all docker machines 
 	-- docker-machine ls
 
-*)	
+*)	Get docker image 
+	-- docker pull dockerRepositoryName
+
+*)	Get all the images 
+	-- docker images
+
+*) 	Run the docker image in container 
+	-- docker run imageName 
+
+*)	Docker container or Instance list 
+	-- docker ps
+
+*)	Stop the container 
+	-- docker stop containerId
+
+*)
+
 
