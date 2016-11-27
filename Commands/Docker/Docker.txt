@@ -20,12 +20,42 @@ Commands :
 *) 	Run the docker image in container 
 	-- docker run imageName 
 
-*)	Docker container or Instance list 
+*)	To see running container or Instance list 
 	-- docker ps
 
 *)	Stop the container 
 	-- docker stop containerId
 
-*)
+*)  To see stopped containner (all)
+	-- docker stop -a
+
+*) 	To remove the container 
+	-- docker rm containerId
+
+*) 	To run docker image into container with giving proper port number 
+	-- docker run -d -p 80:80 dockerImageName
+		Here -d for demon mode 
+
+*) 	To give name to containers 
+	-- docker run -d -p 80:80 --name anyName dockerImageName
+		
+*) 	To run composer file
+	-- docker-compose up 
+
+*)	To run docker compose in demon mode 
+	-- docker-compose up -d
+
+*)	To see logs 
+	-- docker-compose logs
+
+*) 	To stop everything 
+	-- docker-compose down
+
+*)	To get everything required 
+	-- docker-compose build
+
+*)  To do everything 
+	-- docker-compose build --no-cache
+
 
 
