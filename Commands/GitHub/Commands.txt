@@ -230,6 +230,9 @@ Git helpful commands
 *)  To use previous merge settings
 	-- git config --local rerere.enabled true
 
+*) 	To avoid fast forward 
+	-- git merge branch --no -ff
+
 *) 	
 
 
