@@ -1,0 +1,33 @@
+{
+	"manifest_version":2,
+
+	"name":"Pluralsight Helper",
+	"description":"Adds functionality to the Pluralsight website.",
+	"version":"1.0",
+
+	"page_action": {
+		"default_icon":"icon.png",
+		"default_title":"Pluralsight Helper",
+		"default_popup":"popup.html"
+	},
+
+	"background":{
+		"scripts":["eventPage.js"],
+		"persistent":false
+	},
+
+	"content_scripts":[
+		{
+			"matches":["http://pluralsight.com/training/Courses/*", "http://pluralsight.com/training/Authors/Details/*"],
+			"js":["pluralsight_cs.js","jquery-1.10.2.js", "jquery.dataTables.js"],
+			"css":["pluralsight_cs.css"]
+		}
+	],
+
+	"permissions":[
+		"tabs",
+		"http://pluralsight.com/*"
+	]
+
+		
+}
