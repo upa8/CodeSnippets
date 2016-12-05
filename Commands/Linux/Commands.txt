@@ -17,4 +17,25 @@
 *) To rename filename 
 	mv oldFileName newFileName
 
-*)	
+*)	Open a screen
+	-- screen
+
+*)	List all the screens 
+	-- screen -ls
+
+*)  Attach to particular screen 
+	-- screen -r screenPid
+
+*)	Open a screen with name 
+	-- screen -S screenName 
+
+*) 	Delete a screen 
+	-- screen -X -S screenName/id kill
+
+*)  To get out of screen 
+	-- control + A + D
+
+*)  To search previous commands 
+	-- control + r
+
+*)
