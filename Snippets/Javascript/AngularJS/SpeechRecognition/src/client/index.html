@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Speech Gallery</title>
+    <link rel="stylesheet" href="app/content/bootstrap.superhero.min.css" />
+    <link rel="stylesheet" href="app/content/main.css" />
+    <link rel="shortcut icon" href="">
+</head>
+<body class="container-fluid">
+    <div data-ng-include="'app/navigation/navbar.html'"></div>
+
+    <div data-ng-view></div>
+
+    <script src="scripts/angular/angular.min.js"></script>
+    <script src="scripts/angular-route/angular-route.min.js"></script>
+    <script src="scripts/angular-animate/angular-animate.min.js"></script>
+    <script src="scripts/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="scripts/lodash/dist/lodash.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/navigation/navbar.controller.js"></script>
+    <script src="app/speech/speech.recognition.service.js"></script>
+    <script src="app/speech/speech.synthesis.service.js"></script>
+    <script src="app/settings/settings.service.js"></script>
+    <script src="app/settings/settings.controller.js"></script>
+    <script src="app/gallery/gallery.modal.service.js"></script>
+    <script src="app/gallery/gallery.modal.controller.js"></script>
+    <script src="app/gallery/gallery.service.js"></script>
+    <script src="app/gallery/gallery.controller.js"></script>
+</body>
+</html>

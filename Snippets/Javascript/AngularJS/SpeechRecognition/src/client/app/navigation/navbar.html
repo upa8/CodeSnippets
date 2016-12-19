@@ -1,0 +1,29 @@
+<div data-ng-controller="NavController as vm">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"
+                        data-ng-init="navCollapsed = true"
+                        data-ng-click="navCollapsed = !navCollapsed"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#/" class="navbar-brand">Speech Gallery</a>
+            </div>
+            <div class="navbar-collapse collapse"
+                 data-ng-class="{'in': !navCollapsed}">
+                <ul class="nav navbar-nav">
+                    <li data-ng-class="{active: vm.isRoute('gallery')}">
+                        <a data-ng-href="#/">Gallery</a>
+                    </li>
+                    <li data-ng-class="{active: vm.isRoute('settings')}">
+                        <a data-ng-href="#/settings">Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

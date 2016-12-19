@@ -1,0 +1,83 @@
+<div data-ng-controller="GalleryController as vm">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <uib-alert data-ng-repeat="alert in vm.alerts"
+                       dismiss-on-timeout="5000" type="{{alert.type}}"
+                       close="vm.closeAlert($index)">
+                {{alert.message}}
+            </uib-alert>
+
+            <h2>{{vm.album.albumName}}</h2>
+        </div>
+    </div>
+
+    <div class="row" data-ng-if="vm.selectedIndex > -1">
+        <div class="row">
+            <div class="text-center">
+                <img class="mainImage"
+                     data-ng-src="{{vm.album.images[vm.selectedIndex].src}}" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="text-center">
+                <h3>
+                    {{vm.album.images[vm.selectedIndex].caption}}
+                    <a href="" data-ng-click="vm.editCaption()"
+                       uib-tooltip="Edit Caption">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="text-center">
+                <a uib-tooltip="Previous" href="" data-ng-click="vm.previous()"><h2 class="glyphicon glyphicon-chevron-left"></h2></a>
+                <a href="" data-ng-click="vm.startSlideShow()" uib-tooltip="Start Slide Show" data-ng-if="!vm.isSlideShowRunning"><h2 class="glyphicon glyphicon-play"></h2></a>
+                <a href="" data-ng-click="vm.stopSlideShow()" uib-tooltip="Stop Slide Show" data-ng-if="vm.isSlideShowRunning"><h2 class="glyphicon glyphicon-stop"></h2></a>
+                <a uib-tooltip="Next" href="" data-ng-click="vm.next()"><h2 class="glyphicon glyphicon-chevron-right"></h2></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" data-ng-repeat="image in vm.album.images"
+        data-ng-if="$index % 5 === 0">
+        <div class="col-lg-2 col-lg-offset-1"
+             data-ng-if="$index < vm.album.images.length">
+            <a href="" data-ng-click="vm.selectImage($index)"
+               data-ng-class="['thumbnail', {selected: vm.isSelected($index)}]">
+                <img data-ng-src="{{vm.album.images[$index].src}}"
+                     class="img-responsive" />
+            </a>
+        </div>
+        <div class="col-lg-2" data-ng-if="$index + 1 < vm.album.images.length">
+            <a href="" data-ng-click="vm.selectImage($index + 1)"
+               data-ng-class="['thumbnail', {selected: vm.isSelected($index + 1)}]">
+                <img data-ng-src="{{vm.album.images[$index + 1].src}}"
+                     class="img-responsive" />
+            </a>
+        </div>
+        <div class="col-lg-2" data-ng-if="$index + 2 < vm.album.images.length">
+            <a href="" data-ng-click="vm.selectImage($index + 2)"
+               data-ng-class="['thumbnail', {selected: vm.isSelected($index + 2)}]">
+                <img data-ng-src="{{vm.album.images[$index + 2].src}}"
+                     class="img-responsive" />
+            </a>
+        </div>
+        <div class="col-lg-2" data-ng-if="$index + 3 < vm.album.images.length">
+            <a href="" data-ng-click="vm.selectImage($index + 3)"
+               data-ng-class="['thumbnail', {selected: vm.isSelected($index + 3)}]">
+                <img data-ng-src="{{vm.album.images[$index + 3].src}}"
+                     class="img-responsive" />
+            </a>
+        </div>
+        <div class="col-lg-2" data-ng-if="$index + 4 < vm.album.images.length">
+            <a href="" data-ng-click="vm.selectImage($index + 4)"
+               data-ng-class="['thumbnail', {selected: vm.isSelected($index + 4)}]">
+                <img data-ng-src="{{vm.album.images[$index + 4].src}}"
+                     class="img-responsive" />
+            </a>
+        </div>
+    </div>
+</div>
