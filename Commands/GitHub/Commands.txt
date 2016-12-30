@@ -173,6 +173,12 @@ Git helpful commands
 
 *) 	To clear the stash 
 	-- git stash clear
+	
+*) 	To see content of particular stash 
+	-- git stash show -p stash@{0}
+
+*) 	To apply specific stash 
+	--git stash apply stash@{n}
 
 *) 	To get advanced git log 
 	-- git log --graph --decorate --oneline
