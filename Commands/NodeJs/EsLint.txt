@@ -4,4 +4,11 @@ npm install eslint -g
 
 *) To start eslint project 
  --> eslint --init
+ *) To run eslint on file 
+ --> eslint fileName
+ *) To automatically fix issues
+ --> eslint --fix fileName
+ *) To run rules 
+ --> eslint --rulesdir rulePath fileName
+ *)
  
