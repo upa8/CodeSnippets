@@ -1,0 +1,7 @@
+EsLint 
+
+npm install eslint -g
+
+*) To start eslint project 
+ --> eslint --init
+ 
