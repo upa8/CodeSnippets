@@ -56,6 +56,9 @@ Commands :
 
 *)  To do everything 
 	-- docker-compose build --no-cache
+	
+*) To get terminal access of docker container 
+        -- docker exec -it <containerIdOrName> bash
 
 
 
