@@ -97,6 +97,27 @@ To build an image from Dockerfile
   To run that newly created image 
   - docker run --rm -p 8080:3000 -d containerName
   
+To remove an image 
+- docker rmi imageName
+
+To kill container 
+- docker rm -f containerIdOrNam
+
+To kill networs 
+- docker network prune 
+
+To forcefully remove image 
+- docker rmi cimageName -f 
+
+To check all the networks 
+- docker network ls 
+
+To connect to a network 
+- docker run -it --rm --network networkName imageName /bin/bash
+
+
+
+
 
 
 
