@@ -76,3 +76,20 @@ To do everything
 	
 To get terminal access of docker container 
 - docker exec -it <containerIdOrName> bash
+
+To attach to docker container 
+- docker attach <containerIdOrName>
+
+To use volume 
+- docker run --rm -v %CD%:/files imageIname command filename
+
+To inspect the docker container 
+- docker inspect containerName 
+
+To see logs 
+- docker logs containerName
+
+To see logs in interactive mode 
+- docker logs containerName -f 
+
+
