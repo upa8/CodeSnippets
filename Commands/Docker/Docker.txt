@@ -1,64 +1,78 @@
-Learning Docker 
+Learning Docker - 
 
+Check if docker is installed or not 
 
-Commands :
+- docker --version
 
-*) 	Get list of all commands 
-	-- docker-machine 
-*) 	Get ip of docker machine
-	-- docker-machine ip
+Check if docker-machine is installed or not 
 
-*)	Get list of all docker machines 
-	-- docker-machine ls
+- docker-machine --version
 
-*)	Get docker image 
-	-- docker pull dockerRepositoryName
+Check if docker-compose is installed or not 
+- docker-compose --version
 
-*)	Get all the images 
-	-- docker images
+Get all commands for docker 
 
-*) 	Run the docker image in container 
-	-- docker run imageName 
+- docker 
 
-*)	To see running container or Instance list 
-	-- docker ps
+Get all commands for docker-machine 
 
-*)	Stop the container 
-	-- docker stop containerId
+- docker-machine 
 
-*)  To see stopped containner (all)
-	-- docker stop -a
+Get list of all commands 
+- docker-machine 
 
-*) 	To remove the container 
-	-- docker rm containerId
+Get ip of docker machine
+- docker-machine ip
 
-*) 	To run docker image into container with giving proper port number 
-	-- docker run -d -p 80:80 dockerImageName
-		Here -d for demon mode 
+Get list of all docker machines 
+- docker-machine ls
 
-*) 	To give name to containers 
-	-- docker run -d -p 80:80 --name anyName dockerImageName
+Get docker image 
+- docker pull dockerRepositoryName
+
+Get all the images 
+- docker images
+
+Run the docker image in container 
+- docker run imageName 
+
+To see running container or Instance list 
+- docker ps
+
+Stop the container 
+- docker stop containerId
+
+To see stopped containner (all)
+- docker stop -a
+
+To remove the container 
+- docker rm containerId
+
+To run docker image into container with giving proper port number 
+- docker run -d -p 80:80 dockerImageName
+  Here -d for demon mode 
+
+To give name to containers 
+- docker run -d -p 80:80 --name anyName dockerImageName
 		
-*) 	To run composer file
-	-- docker-compose up 
+To run composer file
+- docker-compose up 
 
-*)	To run docker compose in demon mode 
-	-- docker-compose up -d
+To run docker compose in demon mode 
+- docker-compose up -d
 
-*)	To see logs 
-	-- docker-compose logs
+To see logs 
+- docker-compose logs
 
-*) 	To stop everything 
-	-- docker-compose down
+To stop everything 
+- docker-compose down
 
-*)	To get everything required 
-	-- docker-compose build
+To get everything required 
+- docker-compose build
 
-*)  To do everything 
-	-- docker-compose build --no-cache
+To do everything 
+- docker-compose build --no-cache
 	
-*) To get terminal access of docker container 
-        -- docker exec -it <containerIdOrName> bash
-
-
-
+To get terminal access of docker container 
+- docker exec -it <containerIdOrName> bash
