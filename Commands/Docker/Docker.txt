@@ -92,4 +92,11 @@ To see logs
 To see logs in interactive mode 
 - docker logs containerName -f 
 
+To build an image from Dockerfile 
+- docker build -t containerName . 
+  To run that newly created image 
+  - docker run --rm -p 8080:3000 -d containerName
+  
+
+
 
