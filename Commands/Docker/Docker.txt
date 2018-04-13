@@ -115,6 +115,8 @@ To check all the networks
 To connect to a network 
 - docker run -it --rm --network networkName imageName /bin/bash
 
+To delete a container with it's volume
+- docker rm -v containerName
 
 
 
