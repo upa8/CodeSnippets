@@ -118,8 +118,19 @@ To connect to a network
 To delete a container with it's volume
 - docker rm -v containerName
 
+To use host source code as a volume for container 
+- docker run -p 8000:3000 -v $(pwd):/var/www -w "/var/www" imageName command 
+ ex - docker run -p 8000:3000 -v $(pwd):/var/www -w "/var/www" node npm start
 
 
+To stop all containers:
+- docker kill $(docker ps -q)
+
+To remove all containers
+- docker rm $(docker ps -a -q)
+
+To remove all docker images
+- docker rmi $(docker images -q)
 
 
 
