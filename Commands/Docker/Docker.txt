@@ -132,5 +132,8 @@ To remove all containers
 To remove all docker images
 - docker rmi $(docker images -q)
 
+To constally keep running a container 
+- docker run -t imageName 
+
 
 
