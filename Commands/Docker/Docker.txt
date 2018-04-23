@@ -141,6 +141,8 @@ To see all the volumes
 To remove all the unused volumes 
 - docker volume prune
 
+To remove docker container with it's volume 
+- docker rm -v containerId
 
 
 
