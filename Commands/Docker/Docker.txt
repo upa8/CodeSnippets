@@ -135,5 +135,12 @@ To remove all docker images
 To constally keep running a container 
 - docker run -t imageName 
 
+To see all the volumes 
+- docker volume ls 
+
+To remove all the unused volumes 
+- docker volume prune
+
+
 
 
