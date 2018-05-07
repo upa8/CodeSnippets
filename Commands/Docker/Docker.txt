@@ -146,5 +146,5 @@ To remove docker container with it's volume
 
 
 For angular ng serve 
-- docker run -t -p 4200:4200 -v $(pwd):/usr/app -w "/usr/app" ng-cli ng serve --host=0.0.0.0
+- docker run -t -p 4200:4200 -v $(pwd):/usr/app -w "/usr/app" ng-cli ng serve --host=0.0.0.0 --poll=1000
 
