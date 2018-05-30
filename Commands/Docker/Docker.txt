@@ -148,3 +148,10 @@ To remove docker container with it's volume
 For angular ng serve 
 - docker run -t -p 4200:4200 -v $(pwd):/usr/app -w "/usr/app" ng-cli ng serve --host=0.0.0.0 --poll=1000
 
+Run Maven Clean Install
+- docker run -it -v "$PWD":/usr/src -w /usr/src markhobson/maven-chrome mvn clean verify
+- docker run -it -v "$PWD":/usr/src -w /usr/src markhobson/maven-chrome mvn clean install
+
+
+Run Jar in Docker 
+- docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk java -jar target/mvn-hello-world-1.0-SNAPSHOT.jar
